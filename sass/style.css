@@ -202,8 +202,6 @@ body {
   }
   .menu {
     top: 80px;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
   }
   .menu__nav {
     -webkit-box-orient: vertical;
@@ -217,10 +215,11 @@ body {
 }
 
 .hero {
-  background: #f1f1f1 url("../img/hero/hero-bg.png") no-repeat center top 80px;
-  background-size: contain;
-  padding-top: 180px;
+  background: #f1f1f1 url("../img/hero/hero-bg.png") no-repeat center top;
+  background-size: cover;
+  padding-top: 120px;
   padding-bottom: 270px;
+  margin-top: 80px;
 }
 
 .hero__title {
@@ -239,7 +238,7 @@ body {
 
 @media (max-width: 991px) {
   .hero {
-    background-size: cover;
+    background-size: 100%;
     background-position: top right;
   }
 }
