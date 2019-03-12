@@ -4,6 +4,7 @@
  top: 0
  width: 100%
  background-color: #fff
+ //z-index: 99
  &-wrap
   display: flex
   align-items: center
@@ -27,8 +28,31 @@
 
 
 
-/*Кнопка меню*/
+/* Выпадаюшее меню */
 .menu
+ position: fixed
+ top: 80px
+ left: 0
+ padding: 16px 0
+ width: 100%
+ background-color: $primary
+ /*скрываем панель*/
+ z-index: 0
+ transition: 0.2s
+ transform: translateY(-100%)
+ /*добавление класса при клике на меню*/
+ &_active
+  transform: translateY(0)
+ &__nav
+  display: flex
+  align-items: center
+  justify-content: space-around
+ &__link
+  text-decoration: none
+  font-size: 17px
+  text-transform: uppercase
+  color: #ffffff
+ /*Кнопка меню*/
  &-button
   //display: flex
   //flex-direction: column

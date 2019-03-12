@@ -57,6 +57,7 @@ body {
   top: 0;
   width: 100%;
   background-color: #fff;
+  z-index: 99;
 }
 
 .navbar-wrap {
@@ -92,7 +93,47 @@ body {
   text-decoration: none;
 }
 
-/*Кнопка меню*/
+/* Выпадаюшее меню */
+.menu {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  padding: 16px 0;
+  width: 100%;
+  background-color: #507fe1;
+  /*скрываем панель*/
+  z-index: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  /*добавление класса при клике на меню*/
+  /*Кнопка меню*/
+}
+
+.menu_active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.menu__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.menu__link {
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 .menu-button {
   background-color: transparent;
   border: none;
