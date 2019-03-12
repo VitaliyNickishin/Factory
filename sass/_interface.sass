@@ -4,14 +4,13 @@ body
 
 /*Кнопка в навигации*/
 .button-o
- background-color: transparent
  padding: 17px 22px
  font-size: 12px
  +bold
  text-transform: uppercase
  border: 2px solid $primary
  color: $primary
-
+ background-color: transparent
 /*Кнопка в блоке hero*/
 .button
  padding: 25px 45px
@@ -20,3 +19,8 @@ body
  background-color: $primary
  color: #fff
  +bold
+
+
+@media (max-width: 576px)
+ .button-o
+  font-size: 10px
