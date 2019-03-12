@@ -30,7 +30,7 @@ body {
   color: #262626;
 }
 
-/*Кнопка*/
+/*Кнопка в навигации*/
 .button-o {
   background-color: transparent;
   padding: 17px 22px;
@@ -39,6 +39,24 @@ body {
   text-transform: uppercase;
   border: 2px solid #507fe1;
   color: #507fe1;
+}
+
+/*Кнопка в блоке hero*/
+.button {
+  padding: 25px 45px;
+  text-transform: uppercase;
+  border: none;
+  background-color: #507fe1;
+  color: #fff;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
 }
 
 .navbar-wrap {
@@ -105,5 +123,26 @@ body {
   display: block;
   font-size: 14px;
   color: #7b7b79;
+}
+
+.hero {
+  background: #f1f1f1 url("../img/hero/hero-bg.png") no-repeat center top 80px;
+  background-size: contain;
+  padding-top: 180px;
+  padding-bottom: 270px;
+}
+
+.hero__title {
+  margin-bottom: 40px;
+  max-width: 262px;
+  height: 94px;
+  font-size: 30px;
+}
+
+.hero__subtitle {
+  display: block;
+  margin-bottom: 67px;
+  font-size: 30px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
