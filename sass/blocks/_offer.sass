@@ -24,16 +24,17 @@
   margin-bottom: 25px
   &:last-child
    margin-bottom: 0
+ &__group
+  flex-basis: 33.33%
+  &:last-child .form__input
+   border-right-width: 1px //последнему input добавили правую рамку
  &__label
   display: block
   font-size: 17px
- &__group
-  flex-basis: 33.33%
  &__input
   width: 100%
   border-right-width: 0 //убираем накладку рамок между input
-  &:last-child
-   border-right-width: 1px
+  
  &__button
   height: 80px
   width: 100%

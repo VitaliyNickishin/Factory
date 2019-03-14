@@ -2,6 +2,17 @@ body
  +light
  color: $text-color
 
+/*Настройка секций*/
+.section
+ padding: 100px 0
+ &-title
+  font-size: 30px
+  +bold
+  text-align: center
+  text-transform: uppercase
+ &__title //внешнюю геометрию задаем элементам по БЭМ, а не блокам
+  margin-bottom: 100px
+
 /*Кнопка в навигации*/
 .button-o
  padding: 17px 22px
@@ -52,3 +63,7 @@ body
 @media (max-width: 576px)
  .button-o
   font-size: 10px
+ .section
+  padding: 60px 0
+  &-title
+   font-size: 24px
