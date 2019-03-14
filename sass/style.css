@@ -84,6 +84,26 @@ body {
   background-color: #507fe1;
   color: #fff;
   font-family: 'Proxima Nova Semibold', sans-serif;
+  /*Кнопка примерить онлайн в секции каталоге*/
+  /*Кнопка заказать в секции каталоге*/
+}
+
+.button-fitting {
+  color: #507fe1;
+  background-color: #fff;
+}
+
+.button-add {
+  background-color: #7c9fe8;
+  color: #fff;
+  /*Кнопка лайк в секции каталоге*/
+}
+
+.button-like {
+  background-color: #507fe1;
+  height: 30px;
+  width: 30px;
+  border: none;
 }
 
 /*Фоновый цвет вторичных секций*/
@@ -280,7 +300,7 @@ body {
 }
 
 .hero {
-  background: #f1f1f1 url("../img/hero/hero-bg.jpg") no-repeat center top;
+  background: #f1f1f1 url("../img/hero/bg-1.jpg") no-repeat center top;
   background-size: cover;
   padding-top: 120px;
   padding-bottom: 270px;
@@ -444,5 +464,60 @@ body {
         flex-basis: 100%;
     margin-bottom: 50px;
   }
+}
+
+.catalog {
+  /*блок для карточек*/
+}
+
+.catalog-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.catalog__card {
+  margin-bottom: 30px;
+}
+
+.catalog-card {
+  position: relative;
+  max-width: 508px;
+  -webkit-box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+          box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-card__image {
+  display: block;
+}
+
+.catalog-card__tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*блок для кнопок*/
+}
+
+.catalog-card__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  /*общее у кнопок*/
+}
+
+.catalog-card__button {
+  padding: 10px;
+  font-size: 11px;
+  border: none;
+  text-transform: uppercase;
+  height: 30px;
 }
 /*# sourceMappingURL=style.css.map */
