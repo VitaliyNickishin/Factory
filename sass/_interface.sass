@@ -11,7 +11,8 @@ body
  border: 2px solid $primary
  color: $primary
  background-color: transparent
-/*Кнопка в блоке hero*/
+
+/*Кнопка по сайту*/
 .button
  padding: 25px 45px
  text-transform: uppercase
@@ -20,6 +21,33 @@ body
  color: #fff
  +bold
 
+/*Фоновый цвет вторичных секций*/
+.bg-secondary
+ background-color: $bg-secondary
+
+/*Оформление полей формы*/
+.input
+ height: 80px
+ padding-left: 30px
+ border: 1px solid #ddd
+
+/*Оформление checkbox формы*/
+.checkbox
+ display: none //стандартный убираем
+ &:checked + label:before
+  background-color: $primary
+ &-label
+  display: flex
+  align-items: center
+  margin-right: 40px
+  &:hover
+   cursor: pointer
+  &:before
+   content: ''
+   width: 30px
+   height: 30px
+   border: 1px solid #ddd
+   margin-right: 20px
 
 @media (max-width: 576px)
  .button-o
