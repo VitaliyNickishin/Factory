@@ -1,0 +1,59 @@
+.blog
+ /*строка с заголовком*/
+ &__heading
+  margin-bottom: 70px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+ &__title
+  font-size: 24px
+  +bold
+ &__link-more
+  color: $primary
+  font-size: 16px
+  /*блок с картинками*/
+ &-list
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  &__card
+   margin-bottom: 20px
+  &__image
+   width: 270px
+   height: 200px
+   //overflow: hidden
+  &__text
+   display: flex
+   justify-content: center
+   align-items: center
+   min-height: 80px
+ &-card
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08)
+
+@media (max-width: 1199px)
+ .blog
+  &-list
+   justify-content: space-around
+   &__card
+    //margin-right: 30px
+    //margin-left: 30px
+   &__image
+    height: 180px
+
+@media (max-width: 660px)
+ .blog
+  &__heading
+   margin-bottom: 30px
+  &__title
+   font-size: 18px
+  &__link-more
+   font-size: 14px
+
+@media (max-width: 382px)
+ .blog
+  &__heading
+  &__title
+   font-size: 14px
+  &__link-more
+   font-size: 12px
