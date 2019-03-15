@@ -2,9 +2,12 @@ body
  +light
  color: $text-color
 
+img
+ max-width: 100% //картинка не может быть больше своего родителя
+
 /*Настройка секций*/
 .section
- padding: 100px 0
+ padding: 100px 0 0
  &-title
   font-size: 30px
   +bold
@@ -22,6 +25,7 @@ body
  border: 2px solid $primary
  color: $primary
  background-color: transparent
+ text-decoration: none
 
 /*Кнопка по сайту*/
 .button
@@ -31,6 +35,7 @@ body
  background-color: $primary
  color: #fff
  +bold
+ text-decoration: none
  /*Кнопка примерить онлайн в секции каталоге*/
  &-fitting
   color: $primary
@@ -84,3 +89,12 @@ body
   padding: 60px 0
   &-title
    font-size: 24px
+
+@media (max-width: 406px)
+ .checkbox
+   &-label
+    margin-right: 5px
+    &:before
+     margin-right: 5px
+ .button
+  padding: 25px 15px

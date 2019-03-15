@@ -1,4 +1,5 @@
 .catalog
+ background-color: $bg-secondary
  &-block
   display: flex
   justify-content: space-between
@@ -15,19 +16,42 @@
   &__image
    display: block //уберем отступ снизу
   &__tag
+   padding: 10px
    position: absolute
-   top: 0
-   left: 0
+   top: 5px
+   left: 5px
+   font-size: 12px
+   text-transform: uppercase
+   color: #fff
+   background-color: rgba($primary, 0.6)
    /*блок для кнопок*/
   &__buttons
    display: flex //исчезнут отступы между кнопок
    position: absolute
    bottom: 0
    right: 0
-   /*общее у кнопок*/
+    /*общее у кнопок*/
   &__button
    padding: 10px
    font-size: 11px
    border: none
    text-transform: uppercase
    height: 30px
+  /*кнопка смотреть весь каталог*/
+ &__link
+  margin-top: 60px
+  text-align: center
+  &-more
+   display: inline-block
+   margin-bottom: 24px
+   /*описание под кнопкой*/
+ &__description
+  display: block
+  
+
+@media (max-width: 1199px)
+ .catalog
+  &-block
+   justify-content: center
+  &-card
+   //max-width: 470px
