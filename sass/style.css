@@ -195,6 +195,8 @@ img {
   }
 }
 
+/*Настройка шрифтов*/
+/*Настройка флексов*/
 .navbar {
   position: fixed;
   left: 0;
@@ -701,5 +703,54 @@ img {
   .blog__link-more {
     font-size: 12px;
   }
+}
+
+.price-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.price-block__card {
+  margin-bottom: 10px;
+}
+
+.price-card {
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.price-card__text {
+  padding: 20px;
+  font-size: 15px;
+}
+
+.price-card__pricetag {
+  margin-bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.price-card__title {
+  margin: 0;
+}
+
+.price-card__cost {
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.price-card__button {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
