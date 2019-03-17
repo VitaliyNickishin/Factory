@@ -1,20 +1,47 @@
 .price
+ background-color: $bg-secondary
  &-block
   +setflex
   &__card
    margin-bottom: 10px
  &-card
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05)
+  position: relative
+  background-color: #fff
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1)
+  width: 275px
+  &__image
+   img
+    width: 100%
+    height: 183px
   &__text
    padding: 20px
    font-size: 15px
   &__pricetag
-   margin-bottom: 24px
    +setflex
   &__title
    margin: 0
   &__cost
    +bold
   &__button
+   padding: 0 20px
+   position: absolute
+   bottom: 0
+   left: 0
    text-align: center
+   width: 100%
+   height: 80px
+   background-color: #fff
+   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1)
+   z-index: -1
+  &:hover
+   .price-card__button
+    z-index: 99
+    bottom: -80px
+
+@media (max-width: 991px)
+ .price
+  &-block
+   justify-content: center
+   &__card
+    margin: 20px
  

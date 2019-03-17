@@ -3,7 +3,8 @@
  &__block
   margin-top: -200px
   padding: 80px
-  background: #fff url('../img/offer/form-bg.png') no-repeat center right
+  //background: #fff url('../img/offer/form-bg.png') no-repeat center right
+  background: #fff
   background-size: contain
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1)
  &__title
@@ -57,7 +58,11 @@
   &__row
    flex-direction: column
    &-checkbox
-    flex-direction: row
+    //flex-direction: row
+    flex-direction: column
+    align-items: flex-start
+  &__checkbox
+    margin-bottom: 20px
   &__group
    flex-basis: 100%
    width: 100%
