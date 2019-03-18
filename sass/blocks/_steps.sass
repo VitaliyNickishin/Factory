@@ -1,0 +1,48 @@
+.step
+ position: relative
+ text-align: center
+ //padding: 0 10px
+ &:after //кружок
+  content: ""
+  width: 15px
+  height: 15px
+  border-radius: 50%
+  background-color: rgba(#7e7b78, 0.9)
+  display: block
+  position: absolute
+  top: 31%
+  left: 44%
+ &:before //полоска
+  content: ""
+  width: 100%
+  height: 2px
+  background-color: rgba(#7e7b78, 0.9)
+  display: block
+  position: absolute
+  top: 34%
+  right: -61%
+ &:last-child //у последнего блока отключаем полоску
+  &:before
+   display: none
+ &__title
+  font-size: 18px
+ &__text
+  margin-bottom: 30px
+  max-width: 160px
+  margin: auto
+ &s
+  //background-color: #f1f1f1
+  &-block
+   +setflex
+
+@media (max-width: 991px)
+ .step
+  flex-basis: 33.33%
+  //width: 33.33% //если flex-basis не срабатывает
+  &:before
+   display: none
+  &:after
+   display: none
+@media (max-width: 426px)
+ .step
+  flex-basis: 100%
