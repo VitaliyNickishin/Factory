@@ -928,4 +928,33 @@ img {
 .reviews-slider__name {
   display: block;
 }
+
+.factory-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.factory-block__image {
+  margin: 30px 0;
+}
+
+.factory-block__text {
+  margin-left: 70px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  max-width: 520px;
+  font-size: 20px;
+}
+
+@media (max-width: 643px) {
+  .factory-block__text {
+    margin-left: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */
