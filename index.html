@@ -625,13 +625,30 @@
      </div><!-- /.container -->
    </section><!-- /.section contacts -->
 
+   <section class="location">
+    <div class="map" id="map">
+    <!--  <img src="img/contacts/map.jpg" alt=""> -->
+   </div><!-- /.map -->
+   </section>
    
 
-
-
-
  </main>
- 
+ <script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of Uluru
+      var uluru = {lat: 50.0228413, lng: 36.2869263};
+      // The map, centered at Uluru
+      var map = new google.maps.Map(
+          document.getElementById('map'), {zoom: 16, center: uluru});
+      // The marker, positioned at Uluru
+      var marker = new google.maps.Marker({position: uluru, map: map});
+    }
+        </script>
+
+ <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEtJhG3rNHs6kyYQwYLvpv-e0MPRjRj0U&callback=initMap">
+    </script>
  <!-- widget spikmi -->
  <script type="text/javascript" src="https://spikmi.com/Widget?Id=396"></script>
 </body>
