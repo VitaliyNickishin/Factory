@@ -4,6 +4,7 @@
   //+setflex
   display: flex
   justify-content: space-around
+  flex-wrap: wrap
   align-items: center
   max-width: 800px
  &__title
@@ -12,3 +13,12 @@
  &__link
   font-size: 24px
   color: $primary
+
+@media (max-width: 425px)
+ .questions
+  &-block
+  &__title
+   font-size: 28px
+   +bold
+  &__link
+   font-size: 22px
