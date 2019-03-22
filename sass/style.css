@@ -57,6 +57,10 @@ button {
   border: none;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 button:focus {
   outline: none;
 }
@@ -171,6 +175,46 @@ button:focus {
   height: 30px;
   border: 1px solid #ddd;
   margin-right: 20px;
+}
+
+/*Оформление select формы*/
+.select {
+  height: 80px;
+  width: 100%;
+  border: 1px solid #ddd;
+  position: relative;
+}
+
+.select:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: url("../img/offer/arrow-down.png") no-repeat center;
+  background-size: 100%;
+  width: 20px;
+  height: 20px;
+}
+
+.select:hover {
+  cursor: pointer;
+}
+
+.select_checked {
+  padding-left: 30px;
+  line-height: 80px;
+}
+
+.select__dropdown {
+  margin: 0;
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  list-style: none;
 }
 
 @media (max-width: 576px) {
@@ -656,6 +700,12 @@ button:focus {
   /*кнопка смотреть весь каталог*/
 }
 
+.catalog-card:hover .catalog-card__buttons {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
 .catalog-card__image {
   display: block;
 }
@@ -679,6 +729,12 @@ button:focus {
   position: absolute;
   bottom: 0;
   right: 0;
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  overflow-y: hidden;
   /*общее у кнопок*/
 }
 

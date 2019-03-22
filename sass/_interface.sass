@@ -7,8 +7,11 @@ img
 
 button
   border: none 
+  &:hover
+    cursor: pointer
   &:focus
     outline: none
+  
 
 /*Настройка секций*/
 .section
@@ -90,7 +93,40 @@ button
    height: 30px
    border: 1px solid #ddd
    margin-right: 20px
-   
+
+/*Оформление select формы*/
+.select
+ height: 80px
+ width: 100%
+ border: 1px solid #ddd
+ position: relative
+ &:after //каретка 
+  content: ''
+  position: absolute
+  top: 50%
+  right: 2%
+  transform: translateY(-50%)
+  background: url('../img/offer/arrow-down.png') no-repeat center
+  background-size: 100%
+  width: 20px
+  height: 20px
+ &:hover
+  cursor: pointer
+ &_checked
+  padding-left: 30px
+  line-height: 80px
+ &__dropdown
+  margin: 0
+  position: absolute
+  top: 80px
+  width: 100%
+  background-color: #fff
+  border: 1px solid #ddd
+  list-style: none
+
+
+
+
 
 @media (max-width: 576px)
  .button-o

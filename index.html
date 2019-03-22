@@ -85,7 +85,18 @@
            <div class="form__row">
              <div class="form__group">
                <label for="" class="form__label">Вид стекла</label>
-               <input type="text" class="form__input input">
+               <input type="hidden" name="type-glass">
+               <div class="select form__select">С печатью</div><!-- /.select_checked -->
+                <div class="select_checked">
+                  <ul class="select__dropdown">
+                    <li>С печатью</li>
+                    <li>Без печати</li>
+                  </ul>
+               </div><!-- /.select form__select -->
+               <!-- <select name="" id="">
+                 <option value="С печатью">С печатью</option>
+                 <option value="Без печати">Без печати</option>
+               </select> -->
               </div><!-- /.form__group -->
              <div class="form__group">
                <label for="" class="form__label">Ширина, см</label>
@@ -736,7 +747,7 @@
   </script>
   <!-- widget spikmi -->
   <script type="text/javascript" src="https://spikmi.com/Widget?Id=396"></script>
-  <!-- jjquery-2.2.4.min.js -->
+  <!-- jquery-2.2.4.min.js -->
   <script
   src="http://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="

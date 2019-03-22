@@ -1,4 +1,9 @@
 	$(window).load(function() {
+		
+		/*выпадающее меню в навигации*/
+		$('.menu-button').on('click', function(){
+			$('.menu').toggleClass('menu_active');
+		});
 
 		/*слайдер до и росле*/
   $(".before-after").twentytwenty({
