@@ -1,8 +1,6 @@
-$(document).ready(function(){
-
-	
-	/*до и росле*/
 	$(window).load(function() {
+
+		/*слайдер до и росле*/
   $(".before-after").twentytwenty({
 			//default_offset_pct: 0.7, // How much of the before image is visible when the page loads
    //orientation: 'vertical', // Orientation of the before and after images ('horizontal' or 'vertical')
@@ -13,10 +11,19 @@ $(document).ready(function(){
    //move_with_handle_only: true, // Allow a user to swipe anywhere on the image to control slider movement. 
    //click_to_move: false // Allow a user to click (or tap) anywhere on the image to move the slider to that location.
 		});
+
+		/*слайдер slick*/
 		$(".before-slider").slick({
-			draggable: false //отключаем перелистывание пальцем
+			//autoplay:true, //автоматическое листание слайдеров
+			draggable: false, //отключаем перелистывание пальцем
+			//arrows: false, //убрать стрелки
+			prevArrow: "<button type='button' class='arrow slick-prev'></button>",
+			nextArrow: "<button type='button' class='arrow slick-next'></button>",
+			dots: true, //отобразим точки для слайда
+			//dotsClass: 'before-slider__dots' //присваиваем точкам наш класс или оставляеа по умолчанию slick-dots
 		});
-});
+		
+
 
 
 
