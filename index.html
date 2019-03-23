@@ -85,14 +85,16 @@
            <div class="form__row">
              <div class="form__group">
                <label for="" class="form__label">Вид стекла</label>
-               <input type="hidden" name="type-glass">
-               <div class="select form__select">С печатью</div><!-- /.select_checked -->
-                <div class="select_checked">
+               
+               <input type="hidden" name="type-glass" id="select-type" value="С печатью">
+               <div class="select form__select">
+                <div class="select_checked">С печатью</div>
                   <ul class="select__dropdown">
-                    <li>С печатью</li>
-                    <li>Без печати</li>
+                    <li class="select__option" data-value="С печатью">С печатью</li>
+                    <li class="select__option" data-value="Без печати">Без печати</li>
                   </ul>
-               </div><!-- /.select form__select -->
+               
+               </div><!-- /.select_checked --> 
                <!-- <select name="" id="">
                  <option value="С печатью">С печатью</option>
                  <option value="Без печати">Без печати</option>

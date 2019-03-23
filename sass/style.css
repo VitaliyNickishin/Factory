@@ -65,6 +65,10 @@ button:focus {
   outline: none;
 }
 
+ul {
+  padding: 0;
+}
+
 /*Настройка секций*/
 .section {
   padding: 100px 0;
@@ -208,13 +212,26 @@ button:focus {
 }
 
 .select__dropdown {
+  display: none;
   margin: 0;
   position: absolute;
-  top: 80px;
+  top: 78px;
   width: 100%;
   background-color: #fff;
   border: 1px solid #ddd;
   list-style: none;
+}
+
+.select__dropdown_open {
+  display: block;
+}
+
+.select__option {
+  padding: 20px 30px;
+}
+
+.select__option:hover {
+  background-color: #f1f1f1;
 }
 
 @media (max-width: 576px) {

@@ -11,6 +11,9 @@ button
     cursor: pointer
   &:focus
     outline: none
+
+ul
+ padding: 0
   
 
 /*Настройка секций*/
@@ -116,13 +119,20 @@ button
   padding-left: 30px
   line-height: 80px
  &__dropdown
+  display: none
   margin: 0
   position: absolute
-  top: 80px
+  top: 78px
   width: 100%
   background-color: #fff
   border: 1px solid #ddd
   list-style: none
+  &_open
+   display: block 
+ &__option
+  padding: 20px 30px
+  &:hover
+   background-color: $bg-secondary
 
 
 
