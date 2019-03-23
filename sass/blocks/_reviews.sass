@@ -3,8 +3,15 @@
  &-slider
   //+setflex
   display: flex
-  justify-content: space-between
+  justify-content: space-around
+  position: relative
+  &__dots
+   position: absolute
+   bottom: -50px
+  
   &__item
+   margin: 0 5px
+   //margin: auto
    text-align: center
   &__text
    padding: 20px
@@ -26,9 +33,25 @@
     border-top: 10px solid #fff
 
   &__image
-   margin: 20px 0
+   margin: 20px auto
    width: 70px
    border: 2px solid #6a99e9
    border-radius: 60%
   &__name
    display: block
+
+@media (max-width: 768px)
+ .reviews
+  &-slider
+   max-width: 640px
+   margin: auto
+
+@media (max-width: 576px)
+ .reviews
+  &-slider
+   max-width: 320px
+   margin: auto
+   &__item
+    margin-bottom: 80px
+   &__dots
+    bottom: 10px

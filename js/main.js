@@ -29,7 +29,7 @@
    //click_to_move: false // Allow a user to click (or tap) anywhere on the image to move the slider to that location.
 		});
 
-		/*слайдер slick*/
+		/*слайдер slick для блока before*/
 		$(".before-slider").slick({
 			//autoplay:true, //автоматическое листание слайдеров
 			draggable: false, //отключаем перелистывание пальцем
@@ -38,6 +38,41 @@
 			nextArrow: "<button type='button' class='arrow slick-next'></button>",
 			dots: true, //отобразим точки для слайда
 			//dotsClass: 'before-slider__dots' //присваиваем точкам наш класс или оставляеа по умолчанию slick-dots
+		});
+
+		/*слайдер slick для блока reviews*/
+		$(".reviews-slider").slick({
+			draggable: true, //отключаем перелистывание пальцем
+			//dots: true, //отобразим точки для слайда
+	//dotsClass: 'slick-dots reviews-slider__dots', //присваиваем точкам наш класс или оставляеа по умолчанию slick-dots
+			slidesToShow: 3, //отображеть слайдов
+   slidesToScroll: 1, //перелистывать слайд
+   responsive: [ //для медиа запросов
+    {
+      breakpoint: 768,
+      settings: {
+							slidesToShow: 2,
+							slidesToScroll: 1,
+							infinite: true,
+							prevArrow: "<button type='button' class='arrow slick-prev'></button>",
+							nextArrow: "<button type='button' class='arrow slick-next'></button>",
+							dots: true, //убираем точки
+							dotsClass: 'slick-dots reviews-slider__dots', //присваиваем точкам наш класс или оставляеа по умолчанию slick-dots
+      }
+				},
+    {
+      breakpoint: 576,
+      settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							infinite: true,
+							prevArrow: "<button type='button' class='arrow slick-prev'></button>",
+							nextArrow: "<button type='button' class='arrow slick-next'></button>",
+							dots: true, //убираем точки
+							dotsClass: 'slick-dots reviews-slider__dots', //присваиваем точкам наш класс или оставляеа по умолчанию slick-dots
+      }
+				},
+			]
 		});
 
 		/*Анимированная прокрутка при клике на ссылку с якорем*/
