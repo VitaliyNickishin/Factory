@@ -234,6 +234,21 @@ ul {
   background-color: #f1f1f1;
 }
 
+/*стрелка прокрутки вверх*/
+.go-top {
+  display: none;
+  position: fixed;
+  right: 2%;
+  bottom: 25%;
+  width: 20px;
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.go-top:hover {
+  opacity: 1;
+}
+
 @media (max-width: 576px) {
   .button-o {
     font-size: 10px;
@@ -485,15 +500,13 @@ ul {
   .navbar__mobile, .navbar__landline {
     display: none;
   }
+  .menu__link {
+    font-size: 15px;
+    text-transform: inherit;
+  }
 }
 
-@media (max-width: 576px) {
-  .logo {
-    display: none;
-  }
-  .menu {
-    top: 80px;
-  }
+@media (max-width: 750px) {
   .menu__nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -502,6 +515,17 @@ ul {
   }
   .menu__link {
     margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    display: none;
+  }
+  .menu {
+    top: 80px;
   }
 }
 
