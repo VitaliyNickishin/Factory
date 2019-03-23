@@ -47,45 +47,22 @@
 			return false;
 		});
 		
+		/*Присвоение маски*/
+		$("input[type='tel']").mask("+3 8 (999) 999-99-99");
+		
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	/*стрелка прокрутки вверх*/
-$(function() {
-	$(window).scroll(function() {
-		if($(this).scrollTop() > 700) {
-			$('.go-top').fadeIn();
-		} else {
-			$('.go-top').fadeOut();
-		}
-		});
-			$('.go-top').click(function() {
-			$('body,html').animate({scrollTop:0},600);
-	});
+			/*стрелка прокрутки вверх*/
+		$(function() {
+			$(window).scroll(function() {
+				if($(this).scrollTop() > 700) {
+					$('.go-top').fadeIn();
+				} else {
+					$('.go-top').fadeOut();
+				}
+				});
+					$('.go-top').click(function() {
+					$('body,html').animate({scrollTop:0},600);
+			});
 });
 
 
