@@ -100,8 +100,16 @@
 			});
 });
 
-
-
+/*Показать карту только когда докрутится до нее*/
+var reviews = $('.reviews');
+var reviewsTop = reviews.offset().top;
+$(window).bind('scroll', function() {
+	var windowTop = $(this).scrollTop();
+	if (windowTop > reviewsTop) {
+		$('#map').html('')
+$(window).unbind('scroll')
+	}
+});
 
 
 
